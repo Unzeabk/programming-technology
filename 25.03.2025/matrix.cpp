@@ -255,7 +255,7 @@ public:
         return result;
     }
 
-    vect operator*(const vect& v) const {
+    friend vect operator*(const vect& v) const {
         if (dim2 != v.getDim()) {
             cerr << "Error: matrix and vector dimensions do not match for multiplication." << endl;
             return vect();
